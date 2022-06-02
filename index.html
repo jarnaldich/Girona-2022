@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Conector OpenICGC para QGIS</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -13,11 +13,117 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
-	<body>
-		<div class="reveal">
+<body>
+	<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section 
+					data-background-gradient="radial-gradient(#333, #101010)">
+					<h1 style="text-transform: none">Plugin OpenICGC para QGIS</h1>
+					<h4>Jornadas SIG Libre Girona</h4>
+					<h5 style="text-transform: none">8 de junio de 2022</h5>
+				</section>
+
+				<section data-markdown
+					data-background-gradient="radial-gradient(#333, #101010)">
+					<script type="text/template">
+						## ICGC
+
+						- Empresa pública encargada de la cartografía oficial de Catalunya. <!-- .element: class="fragment" -->.
+							- Mapas topográficos, MDE, ortofotos, geológicos...
+						- Datos disponibles bajo licencia Creative Commons (CC BY 4.0) <!-- .element: class="fragment" -->.
+						- Proveedor de IGN, Google Maps <!-- .element: class="fragment" -->.
+						- 40 años en 2022 <!-- .element: class="fragment" -->.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## OpenICGC
+
+						- Iniciativa para promover el uso de los datos ICGC con estándares abiertos. <!-- .element: class="fragment" -->
+							- https://openicgc.github.io/
+						- Facilitar el acceso a los distintos perfiles / casos de uso. <!-- .element: class="fragment" -->
+							- Usuarios GIS / CAD
+							- ... segmentos más precisos: arquitecto municipal, técnico de la administación, ingeniería
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Conector QGIS OpenICGC
+
+						- Conector QGIS como pieza fundamental para los usuarios GIS. <!-- .element: class="fragment" -->
+							- No es el único (web, repositorios...)
+						- Promover el uso de información oficial y de calidad. <!-- .element: class="fragment" -->
+						- Facilitar flujo de trabajo. <!-- .element: class="fragment" -->
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Estadísticas
+
+						- Publicado al público en general en octubre 2021.
+						- 15855 descargas desde entonces.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Demo
+						- Instalación
+						- Geolocalizador
+						- Referencias
+						- Descargas
+						- Fototeca
+						- Estilos
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Arquitectura Descargas
+						- Backend FME en Streaming
+						- Únca pieza código propietario
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Arquitectura Fototeca
+						- MapServer!
+						- MapScript en Python
+							- WFS per la consulta
+							- WMS per al raster
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Planes
+						- Más productos (series de DTM)
+						- Crowdsourcing georef. fototeca
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Feedback
+						- Aplicaciones? Datasets?
+						- Report de errores.
+						- mailto:qgis@openicgc.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Referencias
+						- https://www.icgc.cat/es/Descargas/Connector-QGIS-Open-ICGC 
+						- https://plugins.qgis.org/plugins/OpenICGC/
+					</script>
+				</section>
+
 			</div>
 		</div>
 
